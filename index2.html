@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Page with contact form"></title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Responsive Layout</div>
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="about" class="content">
+            <h2 class="highlight">About Us</h2>
+            <p>This is a sample webpage demonstrating responsive design using Flexbox and CSS Grid.</p>
+        </section>
+
+        <section id="contact" class="form-container">
+            <h1>Contact Us</h1>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="todo" class="form-container">
+            <h1>To-Do List</h1>
+            <form id="todo-form">
+                <input type="text" id="new-task" placeholder="Enter new task" required>
+                <button type="submit">Add Task</button>
+            </form>
+            <ul id="task-list"></ul>
+        </section>
+    </main>
+    <script src="scripts2.js"></script>
+</body>
+</html>

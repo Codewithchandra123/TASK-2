@@ -1,0 +1,186 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #c9d6ff, #e2e2e2); /* Soft gradient */
+    background-size: cover;
+    color: #444;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #4a6fa5; /* Muted blue */
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+    background: #6ea8d8; /* Brighter blue */
+    color: #fff;
+}
+
+/* Main Container */
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+/* Highlighted Headings */
+h1, h2 {
+    color: #4a6fa5; /* Muted blue for headings */
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+h1 {
+    border-bottom: 3px solid #a1c4fd; /* Light gradient blue */
+    padding-bottom: 5px;
+}
+
+h2.highlight {
+    color: #4a6fa5; /* Muted blue */
+    background: #eaf2ff; /* Light blue background */
+    padding: 5px 10px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+/* Important Points */
+p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+p strong {
+    color: #4a6fa5;
+    font-weight: bold;
+}
+
+/* Form Container */
+.form-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    color: #4a6fa5;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #4a6fa5;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #f5f7fa; /* Soft white */
+    transition: border-color 0.3s, background 0.3s;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #a1c4fd; /* Light gradient blue */
+    outline: none;
+    background: #ffffff; /* Bright white */
+}
+
+form button {
+    background: #4a6fa5; /* Muted blue */
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #6ea8d8; /* Brighter blue */
+}
+
+/* To-Do List */
+#todo-form {
+    margin-bottom: 20px;
+}
+
+#task-list li {
+    margin: 5px 0;
+    padding: 5px 10px;
+    border: 1px solid #4a6fa5;
+    border-radius: 5px;
+    background: #eaf2ff; /* Light blue */
+    color: #444;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#task-list li button {
+    background: #ff6b6b; /* Muted red for delete */
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#task-list li button:hover {
+    background: #e63946; /* Brighter red */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links a {
+        margin: 5px 0;
+    }
+
+    .form-container {
+        margin: 10px;
+    }
+}
+/* Home Button Image */
+.nav-links a#home-button {
+    position: relative;
+    overflow: hidden;
+}
+
+
